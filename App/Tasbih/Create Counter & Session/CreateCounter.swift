@@ -113,6 +113,7 @@ struct CreateCounterView: View {
     private func createCounter() {
         let counter = Counter(
             name: entity.name,
+            desc: entity.desc,
             color: entity.color.toHexString() ?? "#000000",
             isFavorite: entity.isFavorite,
             sessions: sessions
